@@ -1,0 +1,176 @@
+<!--<div><h2><p>registrar-factura works! funcionalidad facturación</p></h2></div>
+
+
+<div><h1><span class="glyphicon glyphicon-play-circle">Titulo3</span></h1></div>
+
+{{Nombretitulo}}
+
+
+<div class="container">
+
+<button (click)="onClick1()"class="btn btn-danger">Funcion1</button>
+
+</div> 
+-->
+
+<app-nav-bar></app-nav-bar>
+
+<body class="bg-light container">
+<h1 class="register-title">Registro de Facturación</h1>
+<hr />
+
+<main>
+
+    <section class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <form class="row">
+                        <div class="form-group col-md-4">
+                            <h2 class="card-title">Rente un vehículo</h2>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <label for="">Nombre completo</label>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <input type="text" class="form-control" placeholder="Ejem: Alexander López" id="inputnombre" />
+                        </div>
+                        <div class="form-group col-md-1">
+                            <label for="">Fecha de renta</label>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <input type="date" class="form-control" id="inputfecharenta"/>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <input type="date" class="form-control" id="inputfechaingreso" />
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="">Un vehículo a su estilo</label>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <label for="">Medio de pago</label>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <select id="selectmediodepago" class="form-control">
+                                <option value="0">--Seleccione--</option>
+                                <option value="1">Efectivo 1</option>
+                                <option value="2">Tarjeta Crédito 2</option>
+                                <option value="3">Tarjeta Debito 3</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <label for="">No. factura</label>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <input type="number" class="form-control" id="inputnumerofactura" />
+                        </div>
+                        <div class="form-group col-md-1">
+                            <label for="">Fecha de entrega</label>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <input type="date" class="form-control" id="inputfechadeentrega" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="row mt-4">
+        <div class="col">
+            <table class="table text-center">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Concepto de pago</th>
+                        <th>Dias reservados</th>
+                        <th>Tarifa total</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>001</td>
+                    <td>Vehículo a rentar marca Audi </td>
+                    <td>5 días</td>
+                    <td>250000</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Vehículo a rentar marca Ford </td>
+                    <td>2 días</td>
+                    <td>100000</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Vehículo a rentar marca Renault </td>
+                    <td>4 días</td>
+                    <td>200000</td>
+                </tr>
+                <tr>
+                    <td>004</td>
+                    <td>Vehículo a rentar marca Chevrolet </td>
+                    <td>1 días</td>
+                    <td>150000</td>
+                </tr>
+            </table>
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-group col-md-9">
+                        <label for="">Valor total más impuestos</label>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <input type="number" class="form-control" id="inputvalortotal"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="row md-4">
+        <div class="col md-12">
+                <label for="">Observaciones</label>
+                <input type="text" class="form-control" id="inputobservaciones"/>
+        </div>
+    </section>
+    <section class="row md-6">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <form class="row">
+                        <div class="form-group col-md-5">
+                            <label for=""></label>
+                        </div>
+                        <div class="col md-4">
+                            <button class="btn btn-dark">Consultar factura</button>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for=""></label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+<!--
+<form action="" class="register" [formGroup]="datosfactura">
+
+<div class="register-switch">
+
+<input type="radio" formControlName="Sexo_usuario" name="sex" value="F" id="sex_f" class="register-switch-input" checked>
+<label for="sex_f" class="register-switch-label">Femenino</label>
+
+<input type="radio" formControlName="Sexo_usuario" name="sex" value="M" id="sex_m" class="register-switch-input">
+<label for="sex_m" class="register-switch-label">Masculino</label>
+
+</div>
+
+<input type="text" forControlName="nombre_usuario" class="register_input" placeholder="Nombre">
+<input type="email" forControlName="correo_usuario" class="register_input" placeholder="Email">
+<input type="text" forControlName="user_name" class="register_input" placeholder="Username">
+<input type="password" forControlName="password" class="register_input" placeholder="Password">
+
+<button (click)="facturausuario()" class="register-button" >Registrar</button>
+
+
+</form>
+-->
+</main>
+</body>   
