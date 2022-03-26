@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina RentaVehiculo</title>
+
+        <link rel="stylesheet" type="text/css" href="http://localhost/Modulo3/estilo.css">
+</head>
+<body>
+    <!--Menu de principal-->
+    <div class="nav1">
+    <li><a href="RentaVehiculo.html"></a>USUARIO</li>
+    <li><a href="RentaVehiculo.html">Cerrar sesion</a></li> 
+    </div>  
+    <td><output type="text" name="nombre" size="20" border="2"></td>
+    <h1>Rente un vehiculo</h1>
+    <h2>Un vehiculo a su estilo</h2> 
+    
+<nav>
+    <!--Menu de navegacion-->
+    <div class="nav2">
+    <li class="Centrar"><a href="RentaVehiculo.html">Inicio</a></li>
+    <li><a href="RentaVehiculo.html">Nuestros vehiculos</a></li>
+    <li><a href="RentaVehiculo.html">Rentar vehiculo</a></li>
+    <li><a href="RentaVehiculo.html">¿Quienes somos?</a></li>
+    </div>      
+</nav>
+
+<h3>Traemos para usted las mejores marcas a nivel nacional</h3>
+<aside>
+    <div>    
+        <img src="mazda2.png">
+    </div>
+    <br>
+    <div class="caracteristicas">
+    <p><b>Cantidad de puestos</b>5</p>
+    <p><b>Maletero:</b>Si</p>
+    <p><b>Puertas:</b>4</p>
+    <p><b>Tracción:</b>Automatica</p>
+    <p><b>Aire Acondicionado:</b>Si</p>
+    <p><b>Color:</b>Rojo</p>
+    <p><b>Kilometros recorridos:</b>100 km</p>
+    <p><b>Fecha de revision tecnicomecanica:</b>01/09/2021</p>
+    </div>
+    <br> 
+</aside>
+
+<article>    
+    
+</article>
+<br>
+<section>
+    <h4 style="text-align: center;"><u>Diligencia la siguiente informacion y comiense a disfrutar de nuestros mejores vehiculos</u></h4>
+    <br>
+    <form name="datos_renta" method="POST" action="http://localhost/Modulo3/capturadatos.php">
+        <Table align="center">
+            
+            <tr>
+            <td><p>Nombre</p></td>
+            <td><input type="text" name="nombre" size="20"></td>
+            </tr>
+            
+            <tr>
+            <td><p>Numero de documento</p></td>
+            <td><input type="text" name="documento" size="20"></td>
+            </tr>
+
+            <tr>
+            <td><p>Tipo de documento</p></td> 
+            <td><select name="tipo_documento">   
+                    <option value="Cedula">Cedula</option>
+                    <option value="Documento extranjero">Documento extranjero</option>
+                    <option value="Otro">Otro</option>
+                    </select>
+            </td>    
+            </tr>    
+            
+            <tr> 
+            <td><p>Correo electronico</p></td>
+            <td><input type="text" name="email" size="20"></td>
+            </tr>
+
+            <tr>
+            <td><p>Fecha Inicio</p></td>
+            <td><input type="date" id="start" name="Fecha_Inicio"></td>
+            </tr>
+
+            <tr>
+            <td><p>Fecha final</p></td>
+            <td><input type="date" id="start" name="Fecha_Final"></td>
+            </tr>
+            <tr>
+            <td colspan="2"><center><input type="submit" size="40" value="¡Rente Ahora!" name="enviar"style="background-color: yellow"></center></td>
+            </tr>
+            
+        </Table> 
+        <br>
+    </form>
+
+</section>
+<br>
+<!--Pie de pagina-->
+<footer>    
+    <div>
+    <p style="text-align: right;">Informacion: 60(1)7345523</righ></p>    
+    <p style="text-align: right;">Oficinas Cll 157 No 7-15 Bogota DC</p>
+    <address>Creado el 16 de octubre de 2021</address>
+    </div>    
+</footer>
+</body>
+</html>
+
+<!--<div>pie de pagina</div>>
